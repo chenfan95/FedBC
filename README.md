@@ -9,9 +9,9 @@ Federated Learning Beyond Consensus_**
 3. Torchvision >= 0.9
 
 # Dataset
-- Synthetic
-- MNIST 
-- CIFAR-10 
+- Synthetic (power law)
+- MNIST (power law, iid vs. non-iid)
+- CIFAR-10 (power law, iid vs non-iid)
 - Shakespeare (adpated from https://github.com/TalwalkarLab/leaf)
 
 # Algorithms 
