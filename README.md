@@ -4,9 +4,9 @@ This is the official implementation of **_FedBC: Calibrating Global and Local Mo
 Federated Learning Beyond Consensus_**
 
 # Requirements
-Python >= 3.6
-Pytorch >= 1.8
-Torchvision >= 0.9
+--Python >= 3.6
+--Pytorch >= 1.8
+--Torchvision >= 0.9
 
 # Dataset
 - Synthetic
