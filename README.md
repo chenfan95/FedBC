@@ -38,3 +38,4 @@ This repo implements the folloing algorithms
 - To run Shakespeare dataste jobs:
   - go the directory data/shakespeare
   - ./preprocess.sh -s niid --sf 0.1 -k 20 -t sample -tf 0.8 (see https://github.com/TalwalkarLab/leaf/tree/master/data/shakespeare for more details), this     will
+  - bash nlp_jobs.sh
