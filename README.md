@@ -7,7 +7,7 @@ Federated Learning Beyond Consensus_**
 1. Python >= 3.6
 2. Pytorch >= 1.8
 3. Torchvision >= 0.9
-
+$\sqrt{2}$
 # Dataset
 - Synthetic (power law)
 - MNIST (power law, iid vs. non-iid)
