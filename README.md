@@ -59,15 +59,20 @@ This repo implements the folloing algorithms
 |--iid| whether the user's local data is iid or not for mnist, cifar10 and synthetic|
 |--fix_gamma| whether $\gamma$ is fixed for , default = False|
 |--eval_local| whether to evaluate local performance, default = False|
-|--gpu| whether|
+|--gpu| whether to use gpu or not, default = 0|
 |--seed| random seed, default = 1|
 |--results_dir| directory for results, default = Results|
-|--partition_dir||
-|--read_partition| whether to read |
+|--partition_dir| directory for data partitions, default = Partitions|
+|--read_partition| whether to read data partition, default = False|
 
 # Data Partitioning
-- To create data partition for MNIST: 
-- To create data partition for CIFAR-10:
+- The two important parameters are "skewness_factor" (power law exponent) and 
+and "classes_per_partition", which control data size heterogeneity and non-iidness respectively. The higher 
+the skewness factor and the fewer classes per partition, the more heterogeneous the data becomes
+- The function for creating data partitions is "partition.py". To create partitions for MNIST, CIFAR-10, synthetic:
+  - bash create_partition_cifar.sh
+  - bash create_partition_mnist.sh
+  - bash create_partition_synthetic.sh
 
 # How to run
 - To run synthetic dataset jobs:
