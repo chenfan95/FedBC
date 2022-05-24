@@ -45,7 +45,8 @@ This repo implements the folloing algorithms
 |--q| q for q-FedAvg|
 |--personal_lamda| $lambda$ for pFedMe|
 |--personal_lr||
-|--K||
+|--K|
+$P(A\|B)$|
 |--train_MAML||
 |--test_MAML||
 |--eval_one_step||
