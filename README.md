@@ -43,10 +43,9 @@ This repo implements the folloing algorithms
 |--momentum| monmentum for local training|
 |--lamb_momentum|momentum for updating $\lambda$|
 |--q| q for q-FedAvg|
-|--personal_lamda| $lambda$ for pFedMe|
+|--personal_lamda| \lambda for pFedMe|
 |--personal_lr||
-|--K|
-$P(A\|B)$|
+|--K||
 |--train_MAML||
 |--test_MAML||
 |--eval_one_step||
