@@ -39,7 +39,7 @@ This repo implements the folloing algorithms
 |--alpha| parameter for synthetic dataset|
 |--beta| parameter for synthetic dataset|
 |--lr| learning rate for local training|
-|--lamb_lr| learning rate for $\lambda$|
+|--lamb_lr| learning rate for $$\lambda$$|
 |--momentum| monmentum for local training|
 |--lamb_momentum|momentum for updating $\lambda$|
 |--q| q for q-FedAvg|
