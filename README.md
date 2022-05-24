@@ -28,29 +28,38 @@ This repo implements the folloing algorithms
 # Argument Parser  
 | Argument | Description |
 | --- | --- |
-| --epochs | number of communication rounds |
-| --mu | regularization parameter for FedProx c.f (4) in the paper|
-| --gamma | penalization constant c.f (7) in the paper|
-| --num_users | total number of users |
-| --num_local_users | number of users subsampled at each round |
-| --local_ep | number of local training epochs |
-| --local_bs | batch size used for local training|
-| --bs | batch size used for testing |
-|--alpha| parameter for synthetic dataset|
-|--beta| parameter for synthetic dataset|
-|--lr| learning rate for local training|
-|--lamb_lr| learning rate for $\lambda$|
-|--momentum| monmentum for local training|
-|--lamb_momentum|momentum for updating $\lambda$|
-|--q| q for q-FedAvg|
-|--personal_lamda| \lambda for pFedMe|
-|--personal_lr||
-|--K||
-|--train_MAML||
-|--test_MAML||
-|--eval_one_step||
+| --epochs | number of communication rounds, default = 10|
+| --mu | regularization parameter for FedProx c.f (4) in the paper, default = 0|
+| --gamma | penalization constant c.f (7) in the paper, default = 0|
+| --num_users | total number of users, default = 30|
+| --num_local_users | number of users subsampled at each round, default = 10|
+| --local_ep | number of local training epochs, default = 5|
+| --local_bs | batch size used for local training, default = 20|
+| --bs | batch size used for testing, default = 128|
+|--alpha| parameter for synthetic dataset, controlling model variations, default = 0.5|
+|--beta| parameter for synthetic dataset, controlling data variations, default = 0.5|
+|--lr| learning rate for local training, default = 0.01|
+|--lamb_lr| learning rate for $\lambda$, default = 0.001|
+|--momentum| monmentum for local training, default = 0.5|
+|--lamb_momentum|momentum for updating $\lambda$, default = 0.5|
+|--q| q for q-FedAvg, default = 0|
+|--personal_lamda| $\lambda$ for pFedMe, default = |
+|--personal_lr|learning rate for local training for pFedMe|
+|--K| number of steps for local training|
+|--train_MAML|whether to perform MAML-type training for FedAvg or FedBC|
+|--test_MAML|whether to test the model trained with MAML|
+|--eval_one_step|whether to take one gradient step to evaluate the global model|
+|--inner_lr| learning rate for the lower-level problem of MAML|
+|--outer_lr| learning rate for the upper-level problme of MAML|
+|--model||
+|--dataset||
+|--classes_per_partition||
+|--skewness_factor||
+|--alg||
+|--iid||
+|--fix_gamma||
+|--eval_local||
 |||
-
 
 # Data Partitioning
 
