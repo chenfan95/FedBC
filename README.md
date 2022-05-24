@@ -1,7 +1,7 @@
 # FedBC
 
 This is the official implementation of **_FedBC: Calibrating Global and Local Models via
-Federated Learning Beyond Consensus_**
+Federated Learning Beyond Consensus_** $\times 2$
 
 # Requirements
 1. Python >= 3.6
