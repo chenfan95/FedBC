@@ -37,5 +37,6 @@ This repo implements the folloing algorithms
   - bash mnist_jobs.sh
 - To run Shakespeare dataste jobs:
   - go the directory data/shakespeare
-  - ./preprocess.sh -s niid --sf 0.1 -k 20 -t sample -tf 0.8 (see https://github.com/TalwalkarLab/leaf/tree/master/data/shakespeare for more details), this     will
+  - ./preprocess.sh -s niid --sf 0.1 -k 20 -t sample -tf 0.8 (see https://github.com/TalwalkarLab/leaf/tree/master/data/shakespeare for more details); this     will generate the train and test dataset in the directory data/shakespeare/data/train and data/shakespeare/data/test respectively. 
+  - specify the train and test dataset name using variables TRAIN_DATA_NAME and TEST_DATA_NAME in function generate_shake() from language_utils.py 
   - bash nlp_jobs.sh
