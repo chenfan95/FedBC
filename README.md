@@ -43,25 +43,31 @@ This repo implements the folloing algorithms
 |--momentum| monmentum for local training, default = 0.5|
 |--lamb_momentum|momentum for updating $\lambda$, default = 0.5|
 |--q| q for q-FedAvg, default = 0|
-|--personal_lamda| $\lambda$ for pFedMe, default = |
-|--personal_lr|learning rate for local training for pFedMe|
-|--K| number of steps for local training|
-|--train_MAML|whether to perform MAML-type training for FedAvg or FedBC|
-|--test_MAML|whether to test the model trained with MAML|
-|--eval_one_step|whether to take one gradient step to evaluate the global model|
-|--inner_lr| learning rate for the lower-level problem of MAML|
-|--outer_lr| learning rate for the upper-level problme of MAML|
-|--model||
-|--dataset||
-|--classes_per_partition||
-|--skewness_factor||
-|--alg||
-|--iid||
-|--fix_gamma||
-|--eval_local||
-|||
+|--personal_lamda| $\lambda$ for pFedMe, default = 0.01|
+|--personal_lr|learning rate for local training for pFedMe, default = 0.01|
+|--K| number of steps for local training, default = 1|
+|--train_MAML|whether to perform MAML-type training for FedAvg or FedBC, default = False|
+|--test_MAML|whether to test the model trained with MAML, default =  False|
+|--eval_one_step|whether to take one gradient step to evaluate the global model, default = False|
+|--inner_lr| learning rate for the lower-level problem of MAML, default = 0.01|
+|--outer_lr| learning rate for the upper-level problme of MAML, default = 0.001|
+|--model| models for different datasets, choices: cifarCNN, logistic, mlp, rnn, default = cifarCNN|
+|--dataset| choices: mnist, cifar10, sythetic, shakespeare, default = mnist|
+|--classes_per_partition| the most common number of classes own by users, default = 2|
+|--skewness_factor| power law distribution exponent, default = 0.0|
+|--alg| choices: fedavg, qfedavg, fedprox, scaffold, fedbc,pfedme, default = fedavg|
+|--iid| whether the user's local data is iid or not for mnist, cifar10 and synthetic|
+|--fix_gamma| whether $\gamma$ is fixed for , default = False|
+|--eval_local| whether to evaluate local performance, default = False|
+|--gpu| whether|
+|--seed| random seed, default = 1|
+|--results_dir| directory for results, default = Results|
+|--partition_dir||
+|--read_partition| whether to read |
 
 # Data Partitioning
+- To create data partition for MNIST: 
+- To create data partition for CIFAR-10:
 
 # How to run
 - To run synthetic dataset jobs:
