@@ -29,8 +29,8 @@ This repo implements the folloing algorithms
 | Argument | Description |
 | --- | --- |
 | epochs | number of communication rounds |
-| mu | regularization parameter for FedProx |
-| gamma | penalization constant c.f (7) |
+| mu | regularization parameter for FedProx c.f (4) in the paper|
+| gamma | penalization constant c.f (7) in the paper|
 | num_users | total number of users |
 | num_local_users | number of users subsampled at each round |
 | | |
