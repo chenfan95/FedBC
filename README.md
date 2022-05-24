@@ -55,7 +55,7 @@ This repo implements the folloing algorithms
 |--dataset| choices: mnist, cifar10, sythetic, shakespeare, default = mnist|
 |--classes_per_partition| the most common number of classes own by users, default = 2|
 |--skewness_factor| power law distribution exponent, default = 0.0|
-|--alg| choices: fedavg, qfedavg, fedprox, scaffold, fedbc,pfedme, default = fedavg|
+|--alg| choices: fedavg, qfedavg, fedprox, scaffold, fedbc, pfedme, default = fedavg|
 |--iid| whether the user's local data is iid or not for mnist, cifar10 and synthetic|
 |--fix_gamma| whether $\gamma$ is fixed for , default = False|
 |--eval_local| whether to evaluate local performance, default = False|
@@ -68,7 +68,7 @@ This repo implements the folloing algorithms
 # Data Partitioning
 - The two important parameters are "skewness_factor" (power law exponent) and 
 and "classes_per_partition", which control data size heterogeneity and non-iidness respectively. The higher 
-the skewness factor and the fewer classes per partition, the more heterogeneous the data becomes
+the skewness factor and the fewer classes per partition, the more heterogeneous the data becomes.
 - The function for creating data partitions is "partition.py". To create partitions for MNIST, CIFAR-10, synthetic:
   - bash create_partition_cifar.sh
   - bash create_partition_mnist.sh
