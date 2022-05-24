@@ -33,7 +33,24 @@ This repo implements the folloing algorithms
 | gamma | penalization constant c.f (7) in the paper|
 | num_users | total number of users |
 | num_local_users | number of users subsampled at each round |
-| | |
+| local_ep | number of local training epochs |
+| local_bs | batch size used for local training|
+| bs | batch size used for testing |
+|alpha| parameter for synthetic dataset|
+|beta| parameter for synthetic dataset|
+|lr| learning rate for local training|
+|lamb_lr| learning rate for $\lambda$|
+|momentum| monmentum for local training|
+|lamb_momentum|momentum for updating $\lambda$|
+|q| q for q-FedAvg|
+|personal_lamda| $lambda$ for pFedMe|
+|personal_lr||
+|K||
+|train_MAML||
+|test_MAML||
+|eval_one_step||
+|||
+
 
 # Data Partitioning
 
