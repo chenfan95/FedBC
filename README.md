@@ -25,6 +25,16 @@ This repo implements the folloing algorithms
 - **_FedBC_**
 - **_Per-FedBC_**
 
+# Argument Parser  
+| Argument | Description |
+| --- | --- |
+| epochs | number of communication rounds |
+| mu | Regularization parameter for FedProx |
+| ||
+
+
+# Data Partitioning
+
 # How to run
 - To run synthetic dataset jobs:
   - see examples in synthetic_jobs.sh 
