@@ -1,7 +1,7 @@
 # FedBC
 
 This is the official implementation of **_FedBC: Calibrating Global and Local Models via
-Federated Learning Beyond Consensus_** $\times 2$
+Federated Learning Beyond Consensus_** 
 
 # Requirements
 1. Python >= 3.6
@@ -39,7 +39,7 @@ This repo implements the folloing algorithms
 |--alpha| parameter for synthetic dataset|
 |--beta| parameter for synthetic dataset|
 |--lr| learning rate for local training|
-|--lamb_lr| learning rate for $ \lambda $|
+|--lamb_lr| learning rate for $\lambda$|
 |--momentum| monmentum for local training|
 |--lamb_momentum|momentum for updating $\lambda$|
 |--q| q for q-FedAvg|
